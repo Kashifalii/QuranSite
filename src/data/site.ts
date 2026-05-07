@@ -35,7 +35,7 @@ export const courses: Course[] = [
     slug: "noorani-qaida",
     title: "Noorani Qaida",
     category: "Foundation",
-    image: "/images/online-courses-quran.jpg",
+    image: "/images/cards/card1.webp",
     shortDescription: "A beginner-friendly path for Arabic letters, sounds, and correct Quran reading foundations.",
     description: "Build a confident base in Arabic letter recognition, pronunciation, joining rules, and early Quran reading with patient one-on-one support.",
     duration: "8-12 weeks",
@@ -48,7 +48,7 @@ export const courses: Course[] = [
     slug: "quran-reading",
     title: "Quran Reading",
     category: "Recitation",
-    image: "/images/home-quran.jpg",
+    image: "/images/cards/card2.webp",
     shortDescription: "Guided Quran reading lessons focused on fluency, accuracy, and daily recitation habits.",
     description: "Learn to read the Quran with fluency through guided recitation, correction, and structured home practice.",
     duration: "3-6 months",
@@ -61,7 +61,7 @@ export const courses: Course[] = [
     slug: "tajweed",
     title: "Tajweed Course",
     category: "Recitation",
-    image: "/images/contact-quran.jpg",
+    image: "/images/cards/card3.webp",
     shortDescription: "Learn the rules of Tajweed with practical correction and live recitation assessment.",
     description: "A focused Tajweed course covering articulation points, characteristics of letters, noon sakinah, meem sakinah, madd, and waqf rules.",
     duration: "4-8 months",
@@ -74,7 +74,7 @@ export const courses: Course[] = [
     slug: "hifz",
     title: "Hifz Program",
     category: "Memorization",
-    image: "/images/teachers-quran.jpg",
+    image: "/images/cards/card4.webp",
     shortDescription: "Structured Quran memorization with revision planning, teacher tracking, and parent updates.",
     description: "Memorize the Quran through a realistic plan that balances new lesson, recent revision, and old revision with teacher accountability.",
     duration: "Personalized plan",
@@ -87,7 +87,7 @@ export const courses: Course[] = [
     slug: "islamic-studies",
     title: "Islamic Studies",
     category: "Islamic Studies",
-    image: "/images/online-courses-quran.jpg",
+    image: "/images/cards/card5.webp",
     shortDescription: "Age-appropriate lessons in duas, Seerah, manners, worship, and Islamic values.",
     description: "A balanced Islamic Studies program for children and families covering practical worship, character, stories of prophets, and daily duas.",
     duration: "12 weeks per level",
@@ -100,7 +100,7 @@ export const courses: Course[] = [
     slug: "arabic-language",
     title: "Arabic Language",
     category: "Language",
-    image: "/images/home-quran.jpg",
+    image: "/images/cards/card6.webp",
     shortDescription: "Arabic reading, vocabulary, and grammar foundations for Quran learners.",
     description: "Learn Arabic language essentials that support Quran reading and understanding, including vocabulary, sentence patterns, and grammar basics.",
     duration: "6 months",
@@ -113,14 +113,14 @@ export const courses: Course[] = [
 
 export const teachers = {
   male: [
-    { name: "Qari Abdullah Rahman", qualification: "Ijazah in Hafs", experience: "9 years", languages: "English, Arabic, Urdu", specialization: "Tajweed and Hifz", image: "/images/teachers-quran.jpg" },
-    { name: "Mufti Hamid Usman", qualification: "Dars-e-Nizami", experience: "12 years", languages: "English, Arabic", specialization: "Islamic Studies", image: "/images/online-courses-quran.jpg" },
-    { name: "Sheikh Yusuf Karim", qualification: "MA Islamic Studies", experience: "7 years", languages: "English, Urdu", specialization: "Quran Reading", image: "/images/home-quran.jpg" }
+    { name: "Qari Abdullah Rahman", qualification: "Ijazah in Hafs", experience: "9 years", languages: "English, Arabic, Urdu", specialization: "Tajweed and Hifz", image: "/images/teachers/mufti-1.webp" },
+    { name: "Mufti Hamid Usman", qualification: "Dars-e-Nizami", experience: "12 years", languages: "English, Arabic", specialization: "Islamic Studies", image: "/images/teachers/mufti-2.webp" },
+    { name: "Sheikh Yusuf Karim", qualification: "MA Islamic Studies", experience: "7 years", languages: "English, Urdu", specialization: "Quran Reading", image: "/images/teachers/mufti-3.webp" }
   ],
   female: [
-    { name: "Ustadha Maryam Noor", qualification: "Quran and Tajweed Diploma", experience: "8 years", languages: "English, Urdu", specialization: "Kids Quran Reading", image: "/images/teachers-quran.jpg" },
-    { name: "Ustadha Aisha Farooq", qualification: "Arabic Language Diploma", experience: "6 years", languages: "English, Arabic", specialization: "Arabic and Noorani Qaida", image: "/images/contact-quran.jpg" },
-    { name: "Ustadha Hiba Salman", qualification: "Hifz Certification", experience: "10 years", languages: "English, Urdu, Hindi", specialization: "Female Hifz Mentoring", image: "/images/online-courses-quran.jpg" }
+    { name: "Ustadha Maryam Noor", qualification: "Quran and Tajweed Diploma", experience: "8 years", languages: "English, Urdu", specialization: "Kids Quran Reading", image: "/images/teachers/qaria-1.webp" },
+    { name: "Ustadha Aisha Farooq", qualification: "Arabic Language Diploma", experience: "6 years", languages: "English, Arabic", specialization: "Arabic and Noorani Qaida", image: "/images/teachers/qaria-2.webp" },
+    { name: "Ustadha Hiba Salman", qualification: "Hifz Certification", experience: "10 years", languages: "English, Urdu, Hindi", specialization: "Female Hifz Mentoring", image: "/images/teachers/qaria-3.webp" }
   ]
 };
 

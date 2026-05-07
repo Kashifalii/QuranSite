@@ -8,36 +8,53 @@ import { createMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = createMetadata({
   title: "Contact Quran Academy | Online Quran Classes Support",
-  description: "Contact Quran Academy for online Quran class inquiries, registration support, teacher availability, and fee plan questions.",
+  description:
+    "Contact Quran Academy for online Quran class inquiries, registration support, teacher availability, and fee plan questions.",
   path: "/contact",
-  image: "/images/contact-quran.jpg"
+  image: "/images/contact-quran.jpg",
 });
 
 export default function ContactPage() {
   return (
     <>
-      <PageHero title="Contact Us" subtitle="Have questions about courses, teachers, timings, or registration? Send us a message." image="/images/contact-quran.jpg" />
+      <PageHero
+        title="Contact Us"
+        subtitle="Have questions about courses, teachers, timings, or registration? Send us a message."
+        image="/images/contact-quran.jpg"
+      />
       <section className="container-page grid gap-12 py-20 lg:grid-cols-[1fr_0.8fr] lg:items-center">
         <div>
-          <SectionHeader align="left" eyebrow="Have any Questions...!" title="Get in Touch" />
+          <SectionHeader
+            align="left"
+            eyebrow="Have any Questions...!"
+            title="Get in Touch"
+          />
           <div className="mt-10">
             <ContactForm />
           </div>
         </div>
-        <div className="relative mx-auto min-h-[360px] w-full max-w-md">
-          <Image src="/images/contact-quran.jpg" alt="Quran Academy contact and mosque reference" fill className="object-contain" sizes="(min-width: 1024px) 38vw, 100vw" />
+        <div className="relative mx-auto min-h-[360px] w-full rounded-xl overflow-hidden max-w-md">
+          <Image
+            src="/images/contactImg.webp"
+            alt="Quran Academy contact and mosque reference"
+            fill
+            className="object-contain"
+            sizes="(min-width: 1024px) 38vw, 100vw"
+          />
         </div>
       </section>
       <section className="container-page grid gap-10 py-8 lg:grid-cols-2">
         <div>
-          <p className="mb-2 text-sm font-bold text-[var(--gold)]">Contact Details</p>
+          <p className="mb-2 text-sm font-bold text-[var(--gold)]">
+            Contact Details
+          </p>
           <h2 className="font-display text-4xl font-bold">Get Information</h2>
           <div className="mt-8 grid gap-6 sm:grid-cols-2">
             {[
               ["Email", "admissions@quranacademy.com"],
               ["Phone", "+1 800 123 4567"],
               ["Address", "Online Academy, Global"],
-              ["WhatsApp", "24/7 inquiry support"]
+              ["WhatsApp", "24/7 inquiry support"],
             ].map(([label, value]) => (
               <div key={label} className="rounded-lg bg-white p-5 shadow-sm">
                 <h3 className="font-bold text-[var(--emerald)]">{label}</h3>
