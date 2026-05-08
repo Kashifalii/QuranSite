@@ -5,14 +5,46 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { HomeHero } from "@/components/HomeHero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { courses } from "@/data/site";
+import {
+  CalendarClock,
+  CircleDollarSign,
+  LaptopMinimal,
+  ShieldCheck,
+  Users,
+  Video,
+} from "lucide-react";
 
 const features = [
-  "Certified Quran teachers",
-  "Male and female teachers",
-  "Flexible schedules",
-  "One-on-one live classes",
-  "Affordable fee plans",
-  "Online learning support",
+  {
+    icon: <ShieldCheck />,
+    title: "Certified Quran teachers",
+    para: "Learn with qualified Quran teachers focused on Tajweed, proper recitation, Islamic values, and steady student improvement in every lesson.",
+  },
+  {
+    icon: <Users />,
+    title: "Male and female teachers",
+    para: "Choose experienced male or female Quran teachers to create a comfortable, respectful, and effective learning environment for students.",
+  },
+  {
+    icon: <CalendarClock />,
+    title: "Flexible schedules",
+    para: "Pick class timings that fit your daily routine with flexible schedules designed for kids, students, and working professionals.",
+  },
+  {
+    icon: <Video />,
+    title: "One-on-one live classes",
+    para: "Enjoy personalized one-on-one live Quran classes with focused attention, better interaction, and lessons tailored to your learning pace.",
+  },
+  {
+    icon: <CircleDollarSign />,
+    title: "Affordable fee plans",
+    para: "Access quality Quran education through affordable fee plans designed to provide excellent learning without financial pressure.",
+  },
+  {
+    icon: <LaptopMinimal />,
+    title: "Online learning support",
+    para: "Get reliable online learning support with guided lessons, regular progress tracking, and help whenever students need assistance.",
+  },
 ];
 
 const testimonials = [
@@ -107,16 +139,17 @@ export default function HomePage() {
         <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
             <div
-              key={feature}
+              key={feature.title}
               className="rounded-lg border border-black/10 bg-white p-6 shadow-sm"
             >
               <span className="islamic-shape mb-5 grid size-12 place-items-center bg-[var(--gold)] text-white">
-                ✓
+                {feature.icon}
               </span>
-              <h3 className="font-display text-xl font-bold">{feature}</h3>
+              <h3 className="font-display text-xl font-bold">
+                {feature.title}
+              </h3>
               <p className="mt-3 text-sm leading-6 text-[var(--ink-muted)]">
-                A practical learning experience designed around student comfort,
-                teacher quality, and steady progress.
+                {feature.para}
               </p>
             </div>
           ))}

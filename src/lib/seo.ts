@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-export const siteUrl = "https://quran-academy.example.com";
+export const siteUrl = "https://quran-site-indol.vercel.app/";
 
 type SeoInput = {
   title: string;
