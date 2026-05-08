@@ -74,7 +74,7 @@ export default function HomePage() {
             eyebrow="Welcome to Quran Academy"
             title="In the Name of Allah, the Beneficent, the Merciful"
           />
-          <p className="mt-6 leading-8 text-[var(--ink-muted)]">
+          <p className="mt-6 text-[var(--ink-muted)]">
             Quran Academy is a frontend educational portal for families seeking
             structured online Quran learning. Our programs combine qualified
             teachers, personal attention, flexible schedules, and a calm Islamic
@@ -156,9 +156,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="emerald-pattern py-20 text-white">
+      <section className="bg-[url('/images/Hero-bg.webp')] from-[#008044] to-[#006b1b] py-20 text-white">
         <div className="container-page grid gap-10 lg:grid-cols-[0.9fr_1fr] lg:items-center">
-          <div className="relative min-h-[360px] overflow-hidden rounded-lg p-3">
+          <div className="relative min-h-[360px] overflow-hidden rounded-lg p-3 outline-4 outline-yellow-500/20">
             <Image
               src="/images/oriantation.webp"
               alt="Student reciting Quran during online lesson"
@@ -174,9 +174,13 @@ export default function HomePage() {
             <h2 className="font-display mt-3 text-4xl font-bold">
               Grand Quran Learning Orientation
             </h2>
-            <p className="mt-5 max-w-xl leading-8 text-white/80">
-              Join our online orientation to meet teachers, understand class
-              structure, and choose the right course for your family.
+            <p className="mt-5 max-w-xl  text-white/80">
+              Join our upcoming Quran learning orientation to explore our
+              teaching approach, interact with experienced instructors, and
+              understand how online classes are structured for students of all
+              ages. This session will help parents and learners choose the right
+              program, ask questions directly, and begin their Quran learning
+              journey with clarity and confidence.
             </p>
             <div className="mt-8">
               <ButtonLink href="/registration">Register Today</ButtonLink>
