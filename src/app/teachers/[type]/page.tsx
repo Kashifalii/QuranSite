@@ -37,7 +37,6 @@ export default async function TeachersPage({ params }: TeacherPageProps) {
       <PageHero
         title={`${type} Quran Teachers`}
         subtitle="Qualified instructors for one-on-one Quran learning."
-        image="/images/teachers-quran.jpg"
       />
 
       <section className="container-page py-20">

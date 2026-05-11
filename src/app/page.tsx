@@ -113,7 +113,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="ornament-bg py-20">
+      <section className="bg-amber-50 py-20">
         <div className="container-page">
           <SectionHeader
             eyebrow="Featured Courses"

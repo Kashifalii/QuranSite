@@ -6,19 +6,15 @@ type PageHeroProps = {
   image?: string;
 };
 
-export function PageHero({
-  title,
-  subtitle,
-  image = "/images/contact-quran.jpg",
-}: PageHeroProps) {
+export function PageHero({ title, subtitle }: PageHeroProps) {
   return (
-    <section className="relative grid min-h-[420px] place-items-center overflow-hidden bg-black text-center text-white">
+    <section className="relative grid min-h-105 place-items-center overflow-hidden bg-black text-center text-white">
       <Image
-        src={image}
-        alt=""
+        src="/images/course.jpg"
+        alt={title + " Image"}
         fill
         priority
-        className="object-cover opacity-45"
+        className="object-cover object-center opacity-45"
         sizes="100vw"
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/70" />

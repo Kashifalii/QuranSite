@@ -56,7 +56,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        <div className="flex flex-col gap-4 border-t border-white/15 pt-6 text-sm text-white/70 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 border-t border-white/15 pt-6 text-sm text-white/70 sm:flex-row items-center sm:justify-between">
           <p>Quran Academy © 2026, All Rights Reserved</p>
           <p>Designed for fast, accessible Quran learning.</p>
         </div>
