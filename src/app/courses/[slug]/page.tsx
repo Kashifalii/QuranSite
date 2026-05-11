@@ -5,6 +5,7 @@ import { ButtonLink } from "@/components/ButtonLink";
 import { PageHero } from "@/components/PageHero";
 import { courses } from "@/data/site";
 import { createMetadata } from "@/lib/seo";
+import { LaptopMinimal } from "lucide-react";
 
 type CoursePageProps = { params: Promise<{ slug: string }> };
 
@@ -12,7 +13,9 @@ export function generateStaticParams() {
   return courses.map((course) => ({ slug: course.slug }));
 }
 
-export async function generateMetadata({ params }: CoursePageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: CoursePageProps): Promise<Metadata> {
   const { slug } = await params;
   const course = courses.find((item) => item.slug === slug);
   if (!course) return {};
@@ -20,7 +23,7 @@ export async function generateMetadata({ params }: CoursePageProps): Promise<Met
     title: `${course.title} Online Course | Quran Academy`,
     description: course.shortDescription,
     path: `/courses/${course.slug}`,
-    image: course.image
+    image: course.image,
   });
 }
 
@@ -29,35 +32,57 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
   const course = courses.find((item) => item.slug === slug);
   if (!course) notFound();
 
+  const icon = (course as { icon?: string }).icon;
+
   return (
     <>
-      <PageHero title={course.title} subtitle={course.shortDescription} image={course.image} />
+      <PageHero
+        title={course.title}
+        subtitle={course.shortDescription}
+        icon={<LaptopMinimal className="size-8" />}
+      />
       <section className="container-page grid gap-12 py-20 lg:grid-cols-[1fr_0.8fr]">
         <article>
-          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[var(--gold)]">{course.category}</p>
-          <h2 className="font-display mt-3 text-4xl font-bold">Course Overview</h2>
-          <p className="mt-5 leading-8 text-[var(--ink-muted)]">{course.description}</p>
+          <p className="text-sm font-bold uppercase tracking-[0.18em] text-[var(--gold)]">
+            {course.category}
+          </p>
+          <h2 className="font-display mt-3 text-4xl font-bold">
+            Course Overview
+          </h2>
+          <p className="mt-5 leading-8 text-[var(--ink-muted)]">
+            {course.description}
+          </p>
           <div className="mt-8 grid gap-5 sm:grid-cols-2">
             <div className="rounded-lg bg-[var(--gold-soft)] p-5">
               <h3 className="font-bold text-[var(--emerald)]">Duration</h3>
               <p className="mt-2 text-[var(--ink-muted)]">{course.duration}</p>
             </div>
             <div className="rounded-lg bg-[var(--gold-soft)] p-5">
-              <h3 className="font-bold text-[var(--emerald)]">Class Schedule</h3>
+              <h3 className="font-bold text-[var(--emerald)]">
+                Class Schedule
+              </h3>
               <p className="mt-2 text-[var(--ink-muted)]">{course.schedule}</p>
             </div>
           </div>
           <div className="mt-10 grid gap-8 md:grid-cols-2">
             <div>
-              <h3 className="font-display text-2xl font-bold">Learning Objectives</h3>
+              <h3 className="font-display text-2xl font-bold">
+                Learning Objectives
+              </h3>
               <ul className="mt-4 space-y-3 text-[var(--ink-muted)]">
-                {course.objectives.map((item) => <li key={item}>• {item}</li>)}
+                {course.objectives.map((item) => (
+                  <li key={item}>• {item}</li>
+                ))}
               </ul>
             </div>
             <div>
-              <h3 className="font-display text-2xl font-bold">Learning Outcomes</h3>
+              <h3 className="font-display text-2xl font-bold">
+                Learning Outcomes
+              </h3>
               <ul className="mt-4 space-y-3 text-[var(--ink-muted)]">
-                {course.outcomes.map((item) => <li key={item}>• {item}</li>)}
+                {course.outcomes.map((item) => (
+                  <li key={item}>• {item}</li>
+                ))}
               </ul>
             </div>
           </div>
@@ -68,14 +93,25 @@ export default async function CourseDetailPage({ params }: CoursePageProps) {
         <aside className="lg:sticky lg:top-8 lg:self-start">
           <div className="overflow-hidden rounded-lg border border-black/10 bg-white shadow-sm">
             <div className="relative aspect-[4/3]">
-              <Image src={course.image} alt={`${course.title} online Quran lesson`} fill className="object-cover" sizes="(min-width: 1024px) 40vw, 100vw" />
+              <Image
+                src={course.image}
+                alt={`${course.title} online Quran lesson`}
+                fill
+                className="object-cover"
+                sizes="(min-width: 1024px) 40vw, 100vw"
+              />
             </div>
             <div className="p-6">
               <h3 className="font-display text-2xl font-bold">Fee Snapshot</h3>
               <dl className="mt-4 grid gap-3 text-sm">
                 {Object.entries(course.fees).map(([region, fee]) => (
-                  <div key={region} className="flex justify-between gap-4 border-b border-black/10 pb-2">
-                    <dt className="font-bold text-[var(--emerald)]">{region}</dt>
+                  <div
+                    key={region}
+                    className="flex justify-between gap-4 border-b border-black/10 pb-2"
+                  >
+                    <dt className="font-bold text-[var(--emerald)]">
+                      {region}
+                    </dt>
                     <dd className="text-[var(--ink-muted)]">{fee}</dd>
                   </div>
                 ))}
