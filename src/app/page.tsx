@@ -201,11 +201,9 @@ export default function HomePage() {
               className="rounded-lg border border-black/10 bg-white p-6 shadow-sm"
             >
               <p className="text-[var(--gold)]" aria-label="5 star rating">
-                ★★★★★
+                &#9733;&#9733;&#9733;&#9733;&#9733;
               </p>
-              <p className="mt-4 leading-7 text-[var(--ink-muted)]">
-                {item.text}
-              </p>
+              <p className="mt-4  text-[var(--ink-muted)]">{item.text}</p>
               <h3 className="mt-5 font-bold text-[var(--emerald)]">
                 {item.name}
               </h3>

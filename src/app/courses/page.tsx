@@ -3,6 +3,7 @@ import { CourseFilter } from "@/components/CourseFilter";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { createMetadata } from "@/lib/seo";
+import { LaptopMinimal } from "lucide-react";
 
 export const metadata: Metadata = createMetadata({
   title: "Online Quran Courses | Quran Academy",
@@ -17,6 +18,7 @@ export default function CoursesPage() {
       <PageHero
         title="Online Classes"
         subtitle="Search, filter, and explore course pages with detailed outcomes and fee information."
+        icon={<LaptopMinimal className="size-8" />}
       />
       <section className="container-page py-20">
         <SectionHeader

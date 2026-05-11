@@ -4,9 +4,10 @@ type PageHeroProps = {
   title: string;
   subtitle?: string;
   image?: string;
+  icon?: React.ReactNode;
 };
 
-export function PageHero({ title, subtitle }: PageHeroProps) {
+export function PageHero({ title, subtitle, icon }: PageHeroProps) {
   return (
     <section className="relative grid min-h-105 place-items-center overflow-hidden bg-black text-center text-white">
       <Image
@@ -19,12 +20,14 @@ export function PageHero({ title, subtitle }: PageHeroProps) {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/45 to-black/70" />
       <div className="container-page relative z-10 pt-28">
-        <div className="islamic-shape mx-auto mb-6 size-12 bg-[var(--gold)]" />
+        <div className="mx-auto mb-4 size-14 bg-(--gold) flex items-center justify-center rounded-lg">
+          {icon}
+        </div>
         <h1 className="font-display text-4xl font-bold uppercase leading-tight sm:text-5xl">
           {title}
         </h1>
         {subtitle ? (
-          <p className="mx-auto mt-4 max-w-2xl text-white/82">{subtitle}</p>
+          <p className="mx-auto mt-2 max-w-2xl text-white/82">{subtitle}</p>
         ) : null}
       </div>
     </section>

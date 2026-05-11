@@ -5,13 +5,13 @@ import { FAQAccordion } from "@/components/FAQAccordion";
 import { PageHero } from "@/components/PageHero";
 import { SectionHeader } from "@/components/SectionHeader";
 import { createMetadata } from "@/lib/seo";
+import { UserSearch } from "lucide-react";
 
 export const metadata: Metadata = createMetadata({
   title: "Contact Quran Academy | Online Quran Classes Support",
   description:
     "Contact Quran Academy for online Quran class inquiries, registration support, teacher availability, and fee plan questions.",
   path: "/contact",
-  image: "/images/contact-quran.jpg",
 });
 
 export default function ContactPage() {
@@ -20,7 +20,7 @@ export default function ContactPage() {
       <PageHero
         title="Contact Us"
         subtitle="Have questions about courses, teachers, timings, or registration? Send us a message."
-        image="/images/contact-quran.jpg"
+        icon={<UserSearch className="size-8" />}
       />
       <section className="container-page grid gap-12 py-20 lg:grid-cols-[1fr_0.8fr] lg:items-center">
         <div>

@@ -6,6 +6,7 @@ import { SectionHeader } from "@/components/SectionHeader";
 import { teachers } from "@/data/site";
 import { createMetadata } from "@/lib/seo";
 import Link from "next/link";
+import { Users } from "lucide-react";
 
 type TeacherPageProps = { params: Promise<{ type: string }> };
 
@@ -37,6 +38,7 @@ export default async function TeachersPage({ params }: TeacherPageProps) {
       <PageHero
         title={`${type} Quran Teachers`}
         subtitle="Qualified instructors for one-on-one Quran learning."
+        icon={<Users className="size-8" />}
       />
 
       <section className="container-page py-20">
