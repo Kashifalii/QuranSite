@@ -11,8 +11,8 @@ const styles = {
   primary:
     "bg-[var(--gold)] text-white shadow-[0_8px_0_rgba(136,94,16,0.25)] hover:bg-[#c99021]",
   secondary:
-    "border border-[var(--gold)] bg-white text-[var(--emerald)] hover:bg-[var(--gold-soft)]",
-  light: "bg-white text-[var(--emerald)] hover:bg-[var(--gold-soft)]",
+    "border border-(--emerald) bg-white text-(--emerald) hover:bg-gray-50 hover:shadow-[0_8px_0_rgba(136,94,16,0.25)]",
+  light: "bg-white text-[var(--emerald)] hover:bg-gray-50",
 };
 
 export function ButtonLink({

@@ -18,9 +18,17 @@ export function Footer() {
         </div>
         <div className="grid gap-10 py-12 md:grid-cols-2 lg:grid-cols-[1fr_1.1fr_1fr_1fr]">
           <div>
-            <div className="islamic-shape grid size-32 place-items-center bg-[var(--gold)] font-display text-3xl font-bold">
-              قرآن
-            </div>
+            <Link
+              href="/"
+              className="focus-ring flex flex-col items-start md:items-center gap-4"
+            >
+              <span className="rounded-full flex items-center justify-center size-28 p-2 place-items-center bg-[var(--gold)] font-open-sans text-4xl font-bold text-white outline-4 outline-yellow-500/30">
+                قرآن
+              </span>
+              <span className="font-display text-xl font-bold">
+                Quran Academy
+              </span>
+            </Link>
           </div>
           <div>
             <h3 className="font-display mb-4 text-lg font-bold">Information</h3>

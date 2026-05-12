@@ -33,7 +33,7 @@ export function CourseCard({ course }: { course: Course }) {
           </span>
           <Link
             href={`/courses/${course.slug}`}
-            className="focus-ring rounded-full border border-(--gold) px-4 py-2 text-sm font-bold text-(--emerald) transition hover:bg-(--gold) hover:text-white"
+            className="focus-ring rounded-full px-4 py-2 text-sm font-bold transition bg-(--gold) text-white hover:bg-(--emerald)"
           >
             Details
           </Link>

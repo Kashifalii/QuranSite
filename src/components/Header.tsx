@@ -86,7 +86,7 @@ export function Header() {
         </div>
         <button
           type="button"
-          className="focus-ring grid size-11 place-items-center rounded-full border border-white/30 lg:hidden"
+          className="focus-ring grid size-11 place-items-center rounded-full border-2 border-gray-500 lg:hidden"
           onClick={() => setOpen((value) => !value)}
           aria-expanded={open}
           aria-label="Toggle navigation"
