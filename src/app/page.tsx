@@ -74,7 +74,7 @@ export default function HomePage() {
             eyebrow="Welcome to Quran Academy"
             title="In the Name of Allah, the Beneficent, the Merciful"
           />
-          <p className="mt-6 text-[var(--ink-muted)]">
+          <p className="mt-6 text-(--ink-muted)">
             Quran Academy is a frontend educational portal for families seeking
             structured online Quran learning. Our programs combine qualified
             teachers, personal attention, flexible schedules, and a calm Islamic
@@ -83,14 +83,14 @@ export default function HomePage() {
           <div className="mt-8 grid gap-5 sm:grid-cols-2">
             <div className="rounded-lg border border-black/10 bg-white p-5">
               <h3 className="font-display text-xl font-bold">Our Vision</h3>
-              <p className="mt-2 text-sm leading-6 text-[var(--ink-muted)]">
+              <p className="mt-2 text-sm leading-6 text-(--ink-muted)">
                 Make Quran learning accessible, respectful, and consistent for
                 students worldwide.
               </p>
             </div>
             <div className="rounded-lg border border-black/10 bg-white p-5">
               <h3 className="font-display text-xl font-bold">Our Mission</h3>
-              <p className="mt-2 text-sm leading-6 text-[var(--ink-muted)]">
+              <p className="mt-2 text-sm leading-6 text-(--ink-muted)">
                 Deliver high-quality Quran instruction through caring teachers
                 and practical lesson plans.
               </p>
@@ -149,7 +149,7 @@ export default function HomePage() {
               <h3 className="font-display text-xl font-bold">
                 {feature.title}
               </h3>
-              <p className="mt-3 text-sm leading-6 text-[var(--ink-muted)]">
+              <p className="mt-3 text-sm leading-6 text-(--ink-muted)">
                 {feature.para}
               </p>
             </div>

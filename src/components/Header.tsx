@@ -58,7 +58,7 @@ export function Header() {
         aria-label="Main navigation"
       >
         <Link href="/" className="focus-ring flex items-center gap-3">
-          <span className="islamic-shape grid size-16 place-items-center bg-[var(--gold)] font-display text-2xl font-bold text-white">
+          <span className="rounded-full flex items-center justify-center size-12 p-2 place-items-center bg-[var(--gold)] font-open-sans text-xl font-bold text-white outline-4 outline-yellow-500/30">
             قرآن
           </span>
           <span className="hidden font-display text-xl font-bold sm:block">

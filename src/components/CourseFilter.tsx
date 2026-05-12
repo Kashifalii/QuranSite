@@ -42,7 +42,7 @@ export function CourseFilter() {
               key={item}
               type="button"
               onClick={() => setCategory(item)}
-              className={`focus-ring cursor-pointer rounded-full px-4 py-2 text-sm font-bold ${category === item ? "bg-(--gold) text-white" : "bg-(--gold-soft) text-(--emerald) "}`}
+              className={`focus-ring cursor-pointer rounded-full px-4 py-1 text-sm font-bold ${category === item ? "bg-(--gold) text-white" : "bg-(--gold-soft) text-(--emerald) "}`}
             >
               {item}
             </button>

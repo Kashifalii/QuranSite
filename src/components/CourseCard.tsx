@@ -4,7 +4,7 @@ import type { Course } from "@/data/site";
 
 export function CourseCard({ course }: { course: Course }) {
   return (
-    <article className="overflow-hidden rounded-lg bg-(--gold-soft) shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+    <article className="overflow-hidden rounded-lg bg-(--gold-soft) shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
       <div className="relative aspect-[4/2.4]">
         <Image
           src={course.image}
@@ -18,13 +18,13 @@ export function CourseCard({ course }: { course: Course }) {
         />
       </div>
       <div className="p-6">
-        <p className="mb-2 text-xs font-bold uppercase tracking-[0.16em] text-(--gold)">
+        <p className="mb-1 sm:mb-2 text-xs font-bold uppercase tracking-[0.16em] text-(--gold)">
           {course.category}
         </p>
         <h3 className="font-display text-xl font-bold leading-snug">
           {course.title}
         </h3>
-        <p className="mt-3 text-sm leading-6 text-(--ink-muted)">
+        <p className="mt-3 text-sm  text-(--ink-muted)">
           {course.shortDescription}
         </p>
         <div className="mt-5 flex items-center justify-between gap-4">
@@ -33,7 +33,7 @@ export function CourseCard({ course }: { course: Course }) {
           </span>
           <Link
             href={`/courses/${course.slug}`}
-            className="focus-ring rounded-full border border-(--gold) px-4 py-2 text-sm font-bold text-(--emerald)   hover:bg-white"
+            className="focus-ring rounded-full border border-(--gold) px-4 py-2 text-sm font-bold text-(--emerald) transition hover:bg-(--gold) hover:text-white"
           >
             Details
           </Link>
