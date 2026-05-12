@@ -9,6 +9,7 @@
   --gold: #dea52c;
   --gold-soft: #fff4cf;
   --ink-muted: #5f5a51;
+  --font-open-sans: "Open Sans", sans-serif;
 }
 
 * {
@@ -32,10 +33,6 @@ input,
 select,
 textarea {
   font: inherit;
-}
-
-.font-display {
-  font-family: var(--font-open-sans), sans-serif;
 }
 
 .container-page {

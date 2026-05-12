@@ -16,13 +16,15 @@ export function FAQAccordion() {
             onClick={() => setActive(active === index ? -1 : index)}
             aria-expanded={active === index}
           >
-            <span className="font-medium">{item.question}</span>
-            <span className="grid size-8 shrink-0 place-items-center rounded-full bg-[var(--gold-soft)] text-[var(--gold)]">
+            <span className="font-medium text-sm sm:text-base">
+              {item.question}
+            </span>
+            <span className="flex items-center justify-center size-8 shrink-0 place-items-center font-bold rounded-full bg-(--gold-soft) text-(--gold)">
               {active === index ? "-" : "+"}
             </span>
           </button>
           {active === index ? (
-            <p className="px-5 pb-5 leading-7 text-[var(--ink-muted)]">
+            <p className="px-5 pb-5 text-sm sm:text-base text-(--ink-muted)">
               {item.answer}
             </p>
           ) : null}

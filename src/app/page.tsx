@@ -107,6 +107,7 @@ export default function HomePage() {
             src="/images/aboutImg.webp"
             alt="Quran Academy learning environment"
             fill
+            priority
             className="object-cover"
             sizes="(min-width: 1024px) 45vw, 100vw"
           />
@@ -171,7 +172,7 @@ export default function HomePage() {
             <p className="text-sm font-bold uppercase tracking-[0.18em] text-[var(--gold)]">
               Upcoming Event
             </p>
-            <h2 className="font-display mt-3 text-4xl font-bold">
+            <h2 className="font-display mt-3 text-3xl sm:text-4xl font-bold">
               Grand Quran Learning Orientation
             </h2>
             <p className="mt-5 max-w-xl  text-white/80">
